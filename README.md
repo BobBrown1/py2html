@@ -5,6 +5,7 @@ Welcome to py2html, a python library that helps you build html webpages seemless
 ## Examples
 
 **Install the Package...**
+<<<<<<< HEAD
 
 `pip install py2html`
 
@@ -19,3 +20,5 @@ Welcome to py2html, a python library that helps you build html webpages seemless
 **Add A Header:**
 
 `mypage.add_header("h1", "My Header Text Here")`
+=======
+>>>>>>> c17ad4ec9b373c76cd7ebe02cb9defd12e95dad1
