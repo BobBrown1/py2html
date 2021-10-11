@@ -31,3 +31,7 @@ Welcome to py2html, a python library that helps you build html webpages seemless
 **Set Webpage Background Color:**
 
 `builder.set_background_color(color="Hex Code Here [e.g. #FFFFFF]")`
+
+**Saving The File:**
+
+`builder.save("sample.html")`
