@@ -14,7 +14,7 @@ class Py2HTML:
     if header_type in headerlist:
       pass
     else:
-      raise ValueError("Invalid header type.")
+      raise TypeError("Invalid header type.")
       return
     if style != None:
       self.htmlstring += f"\n<{header_type} style=\"{style}\">{text}</{header_type}>"
@@ -66,7 +66,19 @@ class Py2HTML:
     oggfile = src.replace(".mp4", ".ogg")
     self.htmlstring += f"\n<video controls>\n<source src=\"{src}\" type=\"video/mp4\">\n<source src=\"{oggfile}\" type=\"video/ogg\"\nVideo Not Supported\n</video>"
     return self.htmlstring
- 
+
+  def add_input(self, input_type, style=None):
+    input_list = ["text", "password", "checkbox", "color", "date", "datetime-local",
+    "email", "file", "hidden", "image", "month", "number", "radio", "range", "reset", 
+    "submit", "search", "tel", "time", "url", "week"]
+    if input_type in input_list:
+      if style != None:
+        self.htmlstring += f"<input type=\"{input_type}\" style=\"{style}\">"
+      else:
+        self.htmlstring += f"<input type=\"{input_type}\">"
+    else:
+      raise TypeError("Invalid Input Type")
+      
   def save(self, pagename):
     self.htmlstring += "\n</body>\n</html>"
     file = open(f"{pagename}","w")
