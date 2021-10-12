@@ -44,6 +44,14 @@ class Py2HTML:
     else:
       self.htmlstring += f"\n<a href=\"{link}\">{text}</a>"
     return self.htmlstring
+
+  def add_break(self):
+    self.htmlstring += "<br>\n"
+    return self.htmlstring
+
+  def clear(self):
+    self.htmlstring = ""
+    return self.htmlstring
  
   def save(self, pagename):
     self.htmlstring += "\n</body>\n</html>"
