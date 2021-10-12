@@ -73,12 +73,12 @@ class Py2HTML:
     "submit", "search", "tel", "time", "url", "week"]
     if input_type in input_list:
       if style != None:
-        self.htmlstring += f"<input type=\"{input_type}\" style=\"{style}\">"
+        self.htmlstring += f"\n<input type=\"{input_type}\" style=\"{style}\">"
       else:
-        self.htmlstring += f"<input type=\"{input_type}\">"
+        self.htmlstring += f"\n<input type=\"{input_type}\">"
     else:
       raise TypeError("Invalid Input Type")
-      
+
   def save(self, pagename):
     self.htmlstring += "\n</body>\n</html>"
     file = open(f"{pagename}","w")
