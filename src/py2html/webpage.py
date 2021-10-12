@@ -9,17 +9,17 @@ class Py2HTML:
     self.htmlstring += f"<!DOCTYPE html>\n<html>\n<head>\n<title>{title}</title>\n</head>\n<body>"
     return self.htmlstring
 
-  def add_header(self, headertype, text, style=None):
+  def add_header(self, header_type, text, style=None):
     headerlist = ["h1", "h2", "h3", "h4", "h5", "h6"]
-    if headertype in headerlist:
+    if header_type in headerlist:
       pass
     else:
       raise ValueError("Invalid header type.")
       return
     if style != None:
-      self.htmlstring += f"\n<{headertype} style=\"{style}\">{text}</{headertype}>"
+      self.htmlstring += f"\n<{header_type} style=\"{style}\">{text}</{header_type}>"
     else:
-      self.htmlstring += f"\n<{headertype}>{text}</{headertype}>"
+      self.htmlstring += f"\n<{header_type}>{text}</{header_type}>"
     return self.htmlstring
 
   def add_text(self, text, style=None):
@@ -29,8 +29,8 @@ class Py2HTML:
       self.htmlstring += f"\n<p>{text}</p>"
     return self.htmlstring
 
-  def set_background_color(self, colorhex):
-    match = re.search(r'^#(?:[0-9a-fA-F]{3}){1,2}$', colorhex)
+  def set_background_color(self, color):
+    match = re.search(r'^#(?:[0-9a-fA-F]{3}){1,2}$', color)
     if match:                      
       self.htmlstring = self.htmlstring.replace("<body>", f"<body style=\"background-color: {colorhex}\">")
       return self.htmlstring
