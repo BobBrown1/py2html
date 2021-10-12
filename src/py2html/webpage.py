@@ -52,6 +52,20 @@ class Py2HTML:
   def clear(self):
     self.htmlstring = ""
     return self.htmlstring
+
+  def add_image(self, src, alt=None, style=None):
+    if alt == None:
+      alt = "An Image"
+    if style != None:
+      self.htmlstring += f"\n<img src=\"{src}\" alt=\"{alt}\" style=\"{style}\">"
+    else:
+      self.htmlstring += f"\n<img src=\"{src}\" alt=\"{alt}\">"
+    return self.htmlstring
+
+  def add_video(self, src):
+    oggfile = src.replace(".mp4", ".ogg")
+    self.htmlstring += f"\n<video controls>\n<source src=\"{src}\" type=\"video/mp4\">\n<source src=\"{oggfile}\" type=\"video/ogg\"\nVideo Not Supported\n</video>"
+    return self.htmlstring
  
   def save(self, pagename):
     self.htmlstring += "\n</body>\n</html>"
