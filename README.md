@@ -1,6 +1,6 @@
 # py2html
 
-Welcome to py2html, a python library that helps you build html webpages seemlessly. This package allows you to set headers, text, links, divs, and more. Learn more about py2html and how you can use it in our documentation.
+Welcome to py2html, a Python library that helps you build HTML webpages saemlessly. This package allows you to set headers, text, links, lists, and more. Learn more about py2html and how you can use it in our documentation.
 
 ## Install The Package
 
@@ -20,18 +20,6 @@ Welcome to py2html, a python library that helps you build html webpages seemless
 
 `builder.create(title="Your webpage title")`
 
-**Add A Header:**
+After following these three steps, you are free to do anything you want with your webpage! Remember to save your file when you are done:
 
-`builder.add_header(headertype="h1", text="My Header Text Here")`
-
-**Add Text:**
-
-`builder.add_text(text="Your text here")`
-
-**Set Webpage Background Color:**
-
-`builder.set_background_color(color="Hex Code Here [e.g. #FFFFFF]")`
-
-**Saving The File:**
-
-`builder.save("sample.html")`
+`builder.save(filename="sample.html")`
