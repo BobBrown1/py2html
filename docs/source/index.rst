@@ -38,3 +38,4 @@ Contents:
    quickstart
    usage
    faq
+   upcoming
