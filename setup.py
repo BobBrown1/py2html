@@ -5,8 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="py2html",
-    version="0.0.7",
-    author="Bob Brown",
+    version="0.1.3",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",

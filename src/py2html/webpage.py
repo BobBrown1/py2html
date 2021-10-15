@@ -79,26 +79,21 @@ class Py2HTML:
     else:
       raise TypeError("Invalid Input Type")
 
-  def load_template(self, template, items):
-    templist = ["standard"]
+  def add_template(self, template, items):
     num = 0
-    if template in templist:
-      texts = items.split("|")
-      with open(f"{template}.txt", "r") as f:
-        file = f.read()
-      try:
-        while True:
-          if f"item{num}" in file:
-            file = file.replace(f"item{num}", texts[num])
-            num += 1
-          else:
-            break
-      except:
-        raise ValueError("Error during template load. Make sure you have enough items to match your template.")
-      self.htmlstring += f"\n{file}"
-      return self.htmlstring
-    else:
-      raise TypeError("Invalid template.")
+    texts = items.split("|")
+    try:
+      while True:
+        if f"item{num}" in template:
+          template = template.replace(f"item{num}", texts[num])
+          num += 1
+        else:
+          break
+    except:
+      raise ValueError("Error during template load. Make sure you have enough items to match your template.")
+      return
+    self.htmlstring += f"\n{template}"
+    return self.htmlstring
       
 
   def save(self, pagename):
