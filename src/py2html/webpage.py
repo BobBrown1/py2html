@@ -32,7 +32,7 @@ class Py2HTML:
   def set_background_color(self, color):
     match = re.search(r'^#(?:[0-9a-fA-F]{3}){1,2}$', color)
     if match:                      
-      self.htmlstring = self.htmlstring.replace("<body>", f"<body style=\"background-color: {colorhex}\">")
+      self.htmlstring = self.htmlstring.replace("<body>", f"<body style=\"background-color: {color}\">")
       return self.htmlstring
     else:
       raise ValueError("Invalid hex code.")
