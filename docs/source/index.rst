@@ -37,4 +37,4 @@ Contents:
    installation
    quickstart
    usage
-   frequently asked questions
+   faq
