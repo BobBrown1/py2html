@@ -27,5 +27,7 @@ the features it has to offer. The following table contains a list of attributes 
 +----------------------+---------------------------+
 | load_template        | template, items           |
 +----------------------+---------------------------+
+| auto_create          | cooldown, max, filename   |
++----------------------+---------------------------+
 | save                 | filename                  |
 +----------------------+---------------------------+

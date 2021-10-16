@@ -32,7 +32,7 @@ Use the following code to automatically create as many files as you would like:
 
 .. code-block:: python
 
-  builder.auto_create(cooldown=20, filename="sample.html")
+  builder.auto_create(cooldown=20, max=5, filename="sample.html")
   
 **Things to keep in mind:**
 * Cooldown time is in seconds

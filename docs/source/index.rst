@@ -1,4 +1,4 @@
-Welcome to the PyWig documentation!
+Welcome to the PyWig Documentation!
 =======================================
 
 **PyWig** is a Python library that helps you build HTML webpages seamlessly. 
