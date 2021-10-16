@@ -1,4 +1,4 @@
-# py2html
+# PyWig
 
 Welcome to PyWig, a Python library that helps you build HTML webpages saemlessly. PyWig stands for Python Webpage Interactive Generator. This package allows you to set headers, text, links, lists, and more. Learn more about PyWig and how you can use it in our [documentation](https://pywig.readthedocs.io).
 
