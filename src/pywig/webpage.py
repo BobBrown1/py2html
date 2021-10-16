@@ -1,4 +1,5 @@
 import re
+import time
 
 class PyWig:
   def __init__(self, htmlstring = None):
@@ -79,6 +80,22 @@ class PyWig:
     else:
       raise TypeError("Invalid Input Type")
 
+  def auto_create(self, cooldown : int, max : int, filename : str):
+    num = 0
+    current = 0
+    while current <= max:
+      if num == 0:
+        file = open(f"{filename}")
+        file.write(self.htmlstring)
+        file.close()
+      else:
+        file = open(f"{filename}-{num}")
+        file.write(self.htmlstring)
+        file.close()
+      num += 1
+      current += 1
+      time.sleep(cooldown)
+
   def add_template(self, template, items):
     num = 0
     texts = items.split("|")
@@ -94,7 +111,6 @@ class PyWig:
       return
     self.htmlstring += f"\n{template}"
     return self.htmlstring
-      
 
   def save(self, pagename):
     self.htmlstring += "\n</body>\n</html>"
