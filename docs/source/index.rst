@@ -37,3 +37,5 @@ Contents:
    installation
    quickstart
    usage
+   faq
+   upcoming
