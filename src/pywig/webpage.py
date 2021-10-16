@@ -1,6 +1,6 @@
 import re
 
-class Py2HTML:
+class PyWig:
   def __init__(self, htmlstring = None):
    htmlstring = ""
    self.htmlstring = htmlstring

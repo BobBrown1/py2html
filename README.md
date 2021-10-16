@@ -1,20 +1,20 @@
 # py2html
 
-Welcome to py2html, a Python library that helps you build HTML webpages saemlessly. This package allows you to set headers, text, links, lists, and more. Learn more about py2html and how you can use it in our [documentation](https://py2html.readthedocs.io).
+Welcome to PyWig, a Python library that helps you build HTML webpages saemlessly. PyWig stands for Python Webpage Interactive Generator. This package allows you to set headers, text, links, lists, and more. Learn more about PyWig and how you can use it in our [documentation](https://pywig.readthedocs.io).
 
 ## Install The Package
 
-`pip install py2html`
+`pip install pywig`
 
 ## Examples
 
 **Import Py2HTML:**
 
-`from py2html import webpage`
+`from pywig import webpage`
 
 **Define your Builder:**
 
-`builder = Py2HTML()`
+`builder = PyWig()`
 
 **Create Your Page:**
 

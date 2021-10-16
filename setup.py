@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="py2html",
-    version="0.1.3",
-    description="A small example package",
+    name="pywig",
+    version="0.0.1",
+    description="A Python package made to create HTML files and web pages seamlessly.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/BobBrown1/py2html",
+    url="https://github.com/BobBrown1/pywig",
     project_urls={
-        "Bug Tracker": "https://github.com/BobBrown1/py2html/issues",
+        "Bug Tracker": "https://github.com/BobBrown1/pywig/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
