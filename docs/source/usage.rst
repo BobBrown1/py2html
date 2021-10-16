@@ -2,8 +2,12 @@ Usage
 =======
 
 Here you will learn how to best use PyWig and take full advantage of 
-the features it has to offer. The following table contains a list of attributes and their parameters.
-Click on the attributes to learn more about them or read through the entire page.
+the features it has to offer. The table below contains a list of attributes and their parameters.
+Browse through the table of contents below to search for a specific attribute.
+
+.. contents::
+  :local:
+  :depth: 3
 
 +----------------------+---------------------------+
 | Attributes           | Parameters                |
@@ -24,7 +28,7 @@ Click on the attributes to learn more about them or read through the entire page
 +----------------------+---------------------------+
 | set_background_color | color                     |
 +----------------------+---------------------------+
-| add_template        | template, items           |
+| add_template         | template, items           |
 +----------------------+---------------------------+
 | auto_create          | cooldown, max, filename   |
 +----------------------+---------------------------+
