@@ -37,4 +37,28 @@ Use the following code to automatically create as many files as you would like:
 **Things to keep in mind:**
 * Cooldown time is in seconds
 * A number will be added to your file name after the first is made (e.g. file two will be named "sample-1.html", file five will be named "sample-6", etc.)
-* Using a while loop rather than this function is highly discouraged
+* Using your own while loop rather than this function is highly discouraged
+
+Why is my code not returning anything?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make sure you have used the start and end functions that are required in PyWig. 
+For example:
+
+.. code-block:: python
+
+  builder.create_page("Page Title")
+  # my pywig code here
+  builder.save("sample.html")
+  
+If you would not like to save the code in a file and rather have it be outputted in your console, define the last line of your build and print it.
+For example:
+
+.. code-block:: python
+
+  builder.create_page("Page Title")
+  builder.add_header("h1", "Header Text")
+  x = builder.add_text("This is how you output HTML")
+  print(x)
+
+  
