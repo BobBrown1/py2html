@@ -83,13 +83,15 @@ class PyWig:
   def auto_create(self, cooldown : int, max : int, filename : str):
     num = 0
     current = 0
+    ext = filename.split(".")
+    ext = filename[1]
     while current <= max:
       if num == 0:
-        file = open(f"{filename}")
+        file = open(f"{filename}.{ext}", "w")
         file.write(self.htmlstring)
         file.close()
       else:
-        file = open(f"{filename}-{num}")
+        file = open(f"{filename}-{num}", "w")
         file.write(self.htmlstring)
         file.close()
       num += 1
