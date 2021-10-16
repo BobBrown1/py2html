@@ -8,44 +8,36 @@ Click on the attributes to learn more about them or read through the entire page
 +----------------------+---------------------------+
 | Attributes           | Parameters                |
 +======================+===========================+
-| :ref:`create_page`   | title                     |
+| create_page          | title                     |
 +----------------------+---------------------------+
-| :ref:`add_header`    | header_type, text, style* |
+| add_header           | header_type, text, style* |
 +----------------------+---------------------------+
-| :ref:`add_text`      | text, style*              |
+| add_text             | text, style*              |
 +----------------------+---------------------------+
-| :ref:`add_link`      | text, link, style*        |
+| add_link             | text, link, style*        |
 +----------------------+---------------------------+
-| :ref:`add_list`      | list_type, items, style*  |
+| add_list             | list_type, items, style*  |
 +----------------------+---------------------------+
-| :ref:`add_image`     | src, alt*, style*         |
+| add_image            | src, alt*, style*         |
 +----------------------+---------------------------+
-| :ref:`add_video`     | src                       |
-+----------------------+---------------------------+
-| :ref:`add_image`     | src, alt*, style*         |
+| add_video            | src                       |
 +----------------------+---------------------------+
 | set_background_color | color                     |
 +----------------------+---------------------------+
-| :ref:`load_template` | template, items           |
+| add_template        | template, items           |
 +----------------------+---------------------------+
-| :ref:`auto_create`   | cooldown, max, filename   |
+| auto_create          | cooldown, max, filename   |
 +----------------------+---------------------------+
-| :ref:`save`          | filename                  |
+| save                 | filename                  |
 +----------------------+---------------------------+
 
 Adding Elements
 ----------------
+  
+.. function:: add_header(header_type, text, style*)
 
-create_page
-~~~~~~~~~~~~~
+.. function:: add_text(text, style*)
 
-add_header
-~~~~~~~~~~
+.. function:: add_link(text, link, style*)
 
-add_text
-~~~~~~~~~
-
-add_link
-~~~~~~~~~
-
-
+.. function:: add_link(list_type, items, style*)
