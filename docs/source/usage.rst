@@ -1,7 +1,7 @@
 Usage
 =======
 
-Here you will learn how to best use Py2HTML and take full advantage of 
+Here you will learn how to best use PyWig and take full advantage of 
 the features it has to offer. The following table contains a list of attributes and their parameters.
 
 +----------------------+---------------------------+
