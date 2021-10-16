@@ -12,7 +12,7 @@ Browse through the table of contents below to search for a specific attribute.
 +-----------------------+---------------------------+
 | Attributes            | Parameters                |
 +=======================+===========================+
-| create_page           | title                     |
+| create_page_          | title                     |
 +-----------------------+---------------------------+
 | add_header_           | header_type, text, style* |
 +-----------------------+---------------------------+
@@ -28,11 +28,11 @@ Browse through the table of contents below to search for a specific attribute.
 +-----------------------+---------------------------+
 | set_background_color_ | color                     |
 +-----------------------+---------------------------+
-| add_template          | template, items           |
+| add_template_         | template, items           |
 +-----------------------+---------------------------+
-| auto_create           | cooldown, max, filename   |
+| auto_create_          | cooldown, max, filename   |
 +-----------------------+---------------------------+
-| save                  | filename                  |
+| save_                 | filename                  |
 +-----------------------+---------------------------+
 
 .. _add_header: https://pywig.readthedocs.io/en/latest/usage.html#add_header
@@ -41,7 +41,17 @@ Browse through the table of contents below to search for a specific attribute.
 .. _add_list: https://pywig.readthedocs.io/en/latest/usage.html#add_list
 .. _add_image: https://pywig.readthedocs.io/en/latest/usage.html#add_image
 .. _add_video: https://pywig.readthedocs.io/en/latest/usage.html#add_video
+.. _create_page: https://pywig.readthedocs.io/en/latest/usage.html#create_page
+.. _set_background_color: https://pywig.readthedocs.io/en/latest/usage.html#set_background_color
+.. _add_template: https://pywig.readthedocs.io/en/latest/usage.html#add_temlate
+.. _save: https://pywig.readthedocs.io/en/latest/usage.html#save
 
+Creating and Saving
+--------------------
+
+.. function:: create_page(title)
+
+.. function:: save(filename)
 
 Adding Elements
 ----------------
@@ -63,3 +73,19 @@ Images and Videos
 .. function:: add_image(src, alt=None, style=None)
 
 .. function:: add_video(src)
+
+Page Customization
+--------------------
+
+.. function:: set_background_color(color)
+
+.. function:: auto_create(cooldown, max, filenane)
+
+Templates
+-----------
+
+.. note::
+
+  To load premade templates, you must import the PyWig extension, templates.
+  
+.. function:: add_template(template, items)
