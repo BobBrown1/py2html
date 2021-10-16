@@ -2,7 +2,7 @@ Introduction
 =============
 
 Thank you for taking the first step toward creating web pages with python!
-This documentation will teach everything about using Py2HTML. 
+This documentation will teach everything about using PyWig. 
 If you've already installed the package, you're ready to roll. 
 
 If you are looking for an in-depth manual for this package, you can begin reading the :doc:`usage` section.

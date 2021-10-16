@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Py2HTML'
+project = 'PyWig'
 copyright = '2021, Bob Brown'
 author = 'Bob Brown'
 

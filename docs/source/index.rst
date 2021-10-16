@@ -1,9 +1,9 @@
-Welcome to the Py2HTML documentation!
+Welcome to the PyWig documentation!
 =======================================
 
-**Py2HTML** is a Python library that helps you build HTML webpages seamlessly. 
+**PyWig** is a Python library that helps you build HTML webpages seamlessly. 
 This package allows you to set headers, text, links, lists, and more. 
-Learn more about py2html and how you can use it in this documentation.
+Learn more about PyWig and how you can use it in this documentation.
 
 .. note::
    This python project is under active development. The documentation is
@@ -17,7 +17,7 @@ Features:
 
 Where to Begin?
 -----------------
-Are you looking for a place to start learning about Py2HTML? Read through some of the options below:
+Are you looking for a place to start learning about PyWig? Read through some of the options below:
 
 * **Starting Out:**
    1. :doc:`introduction`

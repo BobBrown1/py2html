@@ -1,26 +1,26 @@
 Quickstart
 ===========
 
-Looking to learn Py2HTML as quickly as possible and get your web page generator up and running? You've come to the right page!
+Looking to learn PyWig as quickly as possible and get your web page generator up and running? You've come to the right page!
 
 .. note::
-  This tutorial assumes you have already installed and imported the Py2HTML package. 
+  This tutorial assumes you have already installed and imported the PyWig package. 
   If you haven't done so, please read the :doc:`installation` segment.
 
 Coding a Basic Web Page Generator
 -----------------------------------
 
-Let's make a simple web page generator with just a few lines of code. This will show you the basics of Py2HTML.
+Let's make a simple web page generator with just a few lines of code. This will show you the basics of PyWig.
 
 Copy and paste this code into your Python file, then we'll go over what it means and does:
 
 .. code-block:: python
 
-  builder = webpage.Py2HTML()
+  builder = webpage.PyWig()
   
-  builder.create_page("My Py2HTML Webpage")
+  builder.create_page("My PyWig Webpage")
   builder.add_header("h1", text="Welcome to my web page")
-  builder.add_text(text="This is my simple web page made with Py2HTML! Learn more in our documentation and on our github page.")
+  builder.add_text(text="This is my simple web page made with PyWig! Learn more in our documentation and on our github page.")
   
   builder.save("sample.html")
   
@@ -51,9 +51,9 @@ For Windows:
 
   py -3 your_file_name.py
 
-Congrats! You have now created a basic web page builder with Py2HTML!
+Congrats! You have now created a basic web page builder with PyWig!
 
 Want to learn more?
 ---------------------
 
-There is so much more you can do with Py2HTML. If you want to add more elements and customize your web pages, try exploring the :doc:`usage` segment to learn more!
+There is so much more you can do with PyWig. If you want to add more elements and customize your web pages, try exploring the :doc:`usage` segment to learn more!

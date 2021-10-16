@@ -4,11 +4,11 @@ Installation
 Installing the Package
 -----------------------
 
-Install Py2HTML using pip:
+Install PyWig using pip:
 
 .. code-block:: console
 
-   $ pip install py2html
+   $ pip install pywig
 
 Importing the Package
 ----------------------
@@ -17,4 +17,4 @@ You can easily import the package by adding this code to the top of your py file
 
 .. code-block:: python
 
-    from py2html import webpage
+    from pywig import webpage
