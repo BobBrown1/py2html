@@ -35,9 +35,10 @@ Use the following code to automatically create as many files as you would like:
   builder.auto_create(cooldown=20, max=5, filename="sample.html")
   
 **Things to keep in mind:**
-* Cooldown time is in seconds
-* A number will be added to your file name after the first is made (e.g. file two will be named "sample-1.html", file five will be named "sample-6", etc.)
-* Using your own while loop rather than this function is highly discouraged
+
+  * Cooldown time is in seconds
+  * A number will be added to your file name after the first is made (e.g. file two will be named "sample-1.html", file five will be named "sample-6", etc.)
+  * Using your own while loop rather than this function is highly discouraged
 
 Why is my code not returning anything?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
