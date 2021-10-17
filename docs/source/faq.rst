@@ -3,8 +3,8 @@ Frequently Asked Questions
 
 Here are some frequently asked questions that we think will help you on your PyWig journey:
 
-.. contents:: Table of FAQ Contents:
-  
+.. contents:: Table of Contents
+  :depth: 3
   :local:
   
 General Questions
