@@ -107,4 +107,4 @@ class PyWig:
     file = open(f"{pagename}.html","w")
     file.write(self.htmlstring)
     file.close()
-    self.htmlstring = self.htmlstring.replace("</body>\n</html>", "")
+    self.htmlstring = self.htmlstring.replace("\n</body>\n</html>", "")
