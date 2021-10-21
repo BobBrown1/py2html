@@ -1,5 +1,8 @@
 import re
 import time
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import os
 
 class PyWig:
   def __init__(self, htmlstring = None):
@@ -101,6 +104,20 @@ class PyWig:
       raise ValueError("Error during template load. Make sure you have enough items to match your template.")
       return
     self.htmlstring += f"\n{template}"
+  
+  def add_list(self, list_type, items, style=None):
+    list_types = ["ol", "ul"]
+    if list_type in list_types:
+      items = items.split("|")
+      if style == None:
+        self.htmlstring += f"\n<{list_types}>"
+      else:
+        self.htmlstring += f"\n<{list_types} style='{style}'>"
+      for item in items:
+        self.htmlstring += f"\n<li>{item}</li>"
+      self.htmlstring += f"\n</{list_type}>"
+    else:
+      raise ValueError("Invalid list type.")
 
   def save(self, pagename):
     self.htmlstring += "\n</body>\n</html>"
@@ -108,3 +125,11 @@ class PyWig:
     file.write(self.htmlstring)
     file.close()
     self.htmlstring = self.htmlstring.replace("\n</body>\n</html>", "")
+
+  def launch(self, filename):
+    chrome_options = Options()
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    driver = webdriver.Chrome(options=chrome_options)
+    html_file = os.getcwd() + "//" + filename
+    driver.get("file:///" + html_file)
