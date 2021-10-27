@@ -90,13 +90,12 @@ class PyWig:
       current += 1
       time.sleep(cooldown)
 
-  def add_template(self, template, items):
+  def add_template(self, template, items = []):
     num = 0
-    texts = items.split("|")
     try:
       while True:
         if f"item{num}" in template:
-          template = template.replace(f"item{num}", texts[num])
+          template = template.replace(f"item{num}", items[num])
           num += 1
         else:
           break
@@ -105,10 +104,9 @@ class PyWig:
       return
     self.htmlstring += f"\n{template}"
   
-  def add_list(self, list_type, items, style=None):
+  def add_list(self, list_type, items = [], style = None):
     list_types = ["ol", "ul"]
     if list_type in list_types:
-      items = items.split("|")
       if style == None:
         self.htmlstring += f"\n<{list_types}>"
       else:
