@@ -108,9 +108,9 @@ class PyWig:
     list_types = ["ol", "ul"]
     if list_type in list_types:
       if style == None:
-        self.htmlstring += f"\n<{list_types}>"
+        self.htmlstring += f"\n<{list_type}>"
       else:
-        self.htmlstring += f"\n<{list_types} style='{style}'>"
+        self.htmlstring += f"\n<{list_type} style='{style}'>"
       for item in items:
         self.htmlstring += f"\n<li>{item}</li>"
       self.htmlstring += f"\n</{list_type}>"
